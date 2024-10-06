@@ -1,4 +1,4 @@
-package com.example.examen.framework.views
+package com.example.examen.framework.views.activities
 import android.app.Activity
 import android.os.Bundle
 import com.example.examen.databinding.ActivityMainBinding
