@@ -1,15 +1,16 @@
-// Kotlin
 package com.example.examen.data.network.model
 
+import com.google.gson.annotations.SerializedName
+
 data class DragonBallObject(
-    override var id: Int,
-    override var name: String?,
-    override var ki: String?,
-    override var maxKi: String?,
-    override var race: String?,
-    override var gender: String?,
-    override var description: String?,
-    override var image: String?,
-    override var affiliation: String?,
-    override var deletedAt: String?
-) : DragonBallBase()
+    @SerializedName("id") val id: Int,
+    @SerializedName("name") val name: String,
+    @SerializedName("ki") val ki: String,
+    @SerializedName("maxKi") val maxKi: String,
+    @SerializedName("race") val race: String,
+    @SerializedName("gender") val gender: String,
+    @SerializedName("description") val description: String,
+    @SerializedName("image") val image: String,
+    @SerializedName("affiliation") val affiliation: String,
+    @SerializedName("deletedAt") val deletedAt: String?
+)

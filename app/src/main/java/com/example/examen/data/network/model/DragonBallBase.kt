@@ -1,16 +1,24 @@
-// Java
 package com.example.examen.data.network.model
 
-open class DragonBallBase {
-    // Getters y setters
-    open var id: Int = 0
-    open var name: String? = null
-    open var ki: String? = null
-    open var maxKi: String? = null
-    open var race: String? = null
-    open var gender: String? = null
-    open var description: String? = null
-    open var image: String? = null
-    open var affiliation: String? = null
-    open var deletedAt: String? = null
-}
+import com.google.gson.annotations.SerializedName
+
+data class DragonBallBase<T>(
+    @SerializedName("items") val items: T,
+    @SerializedName("meta") val meta: Meta,
+    @SerializedName("links") val links: Links
+)
+
+data class Meta(
+    @SerializedName("totalItems") val totalItems: Int,
+    @SerializedName("itemCount") val itemCount: Int,
+    @SerializedName("itemsPerPage") val itemsPerPage: Int,
+    @SerializedName("totalPages") val totalPages: Int,
+    @SerializedName("currentPage") val currentPage: Int
+)
+
+data class Links(
+    @SerializedName("first") val first: String,
+    @SerializedName("previous") val previous: String?,
+    @SerializedName("next") val next: String?,
+    @SerializedName("last") val last: String
+)
