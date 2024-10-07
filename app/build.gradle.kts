@@ -70,6 +70,9 @@ dependencies {
 
     implementation("androidx.savedstate:savedstate-ktx:1.2.0")
 
+    //GSON
+    implementation("com.google.code.gson:gson:2.8.8")
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
