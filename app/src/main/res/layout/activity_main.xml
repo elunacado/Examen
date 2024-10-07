@@ -5,14 +5,20 @@
     android:layout_height="match_parent"
     >
 
-    <TextView
-        android:id="@+id/only_text"
+    <include        android:id="@+id/app_bar_main"
+        layout="@layout/main_navbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textStyle="bold"
-        android:text="Hello World!"
-        android:textSize="18sp"
-        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
         />
+
+    <fragment
+        android:id="@+id/fragment_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/app_bar_main"
+        />
+
+
 </RelativeLayout>

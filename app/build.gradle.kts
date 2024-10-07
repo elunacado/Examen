@@ -49,6 +49,7 @@ dependencies {
     //Glide is an image loading library for Android that supports fetching, decoding, and displaying video stills, images, and animated GIFs.
     implementation("com.github.bumptech.glide:glide:4.12.0")
     implementation(libs.androidx.runtime.saved.instance.state)
+    implementation(libs.androidx.navigation.fragment)
     annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
     implementation("jp.wasabeef:glide-transformations:4.3.0")
 
