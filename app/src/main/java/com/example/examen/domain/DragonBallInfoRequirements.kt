@@ -7,6 +7,6 @@ class DragonBallInfoRequirements {
     private val repository = DragonBallRepository()
 
     suspend operator fun invoke(
-        limit: Int
-    ): List<DragonBallObject>? = repository.getDragonBallList(limit)
+        id: Int
+    ): DragonBallObject? = repository.getDragonBallInfo(id)
 }
