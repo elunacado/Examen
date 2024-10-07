@@ -58,7 +58,7 @@ dependencies {
 
     //Fragment
     //A Fragment represents a behavior or a portion of user interface in an Activity.
-    implementation("androidx.fragment:fragment-ktx:1.5.8")
+    implementation("androidx.fragment:fragment-ktx:1.5.7")
 
     //Activity
     //An Activity is a single, focused thing that the user can do.
@@ -66,7 +66,9 @@ dependencies {
 
     //Data Binding
     //Data binding is a support library that allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
-    implementation("androidx.databinding:databinding-adapters:7.1.2")
+    implementation("androidx.databinding:databinding-adapters:4.2.2")
+
+    implementation("androidx.savedstate:savedstate-ktx:1.2.0")
 
 
     implementation(libs.androidx.core.ktx)
