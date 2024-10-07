@@ -49,6 +49,7 @@ dependencies {
     //Glide is an image loading library for Android that supports fetching, decoding, and displaying video stills, images, and animated GIFs.
     implementation("com.github.bumptech.glide:glide:4.12.0")
     implementation(libs.androidx.runtime.saved.instance.state)
+    implementation(libs.androidx.navigation.fragment)
     annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
     implementation("jp.wasabeef:glide-transformations:4.3.0")
 
@@ -58,7 +59,7 @@ dependencies {
 
     //Fragment
     //A Fragment represents a behavior or a portion of user interface in an Activity.
-    implementation("androidx.fragment:fragment-ktx:1.5.8")
+    implementation("androidx.fragment:fragment-ktx:1.5.7")
 
     //Activity
     //An Activity is a single, focused thing that the user can do.
@@ -66,7 +67,12 @@ dependencies {
 
     //Data Binding
     //Data binding is a support library that allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
-    implementation("androidx.databinding:databinding-adapters:7.1.2")
+    implementation("androidx.databinding:databinding-adapters:4.2.2")
+
+    implementation("androidx.savedstate:savedstate-ktx:1.2.0")
+
+    //GSON
+    implementation("com.google.code.gson:gson:2.8.8")
 
 
     implementation(libs.androidx.core.ktx)
