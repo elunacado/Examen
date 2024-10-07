@@ -11,8 +11,7 @@ import com.example.examen.R
 import com.example.examen.data.network.model.DragonBallObject
 import com.example.examen.databinding.ItemDragonBallBinding
 
-
-class DragonBallViewHolder(private val binding: ItemDragonBallBinding) : RecyclerView.ViewHolder(binding.root) {
+class ZeroKiViewHolder(private val binding: ItemDragonBallBinding) : RecyclerView.ViewHolder(binding.root) {
 
     private fun loadImage(url: String, imageView: ImageView, context: Context) {
         val requestOptions = RequestOptions()

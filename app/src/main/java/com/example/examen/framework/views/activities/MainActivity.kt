@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import com.example.examen.R
 import com.example.examen.databinding.ActivityMainBinding
 import com.example.examen.framework.views.fragments.AllCharactersFragment
+import com.example.examen.framework.views.fragments.ZeroKiFragment
 import com.example.mypokedexapp.utils.Constants
 
 class MainActivity: AppCompatActivity() {
@@ -52,7 +53,7 @@ class MainActivity: AppCompatActivity() {
 
         when(menuOption){
             Constants.MENU_DRAGONBALL -> exchangeCurrentFragment(AllCharactersFragment(),Constants.MENU_DRAGONBALL)
-            //Constants.MENU_ZEROKI -> exchangeCurrentFragment(SearchFragment(),Constants.MENU_ZEROKI)
+            Constants.MENU_ZEROKI -> exchangeCurrentFragment(ZeroKiFragment(),Constants.MENU_ZEROKI)
         }
     }
 
